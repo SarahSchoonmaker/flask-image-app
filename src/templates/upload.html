@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Upload</title>
+ <link href="{{ url_for('static', filename='css/main.css') }}" type="text/css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="title-upload">
+        <h1>The Image Validator App</h1>
+    </div>
+    <section class="image-upload">
+        <form id="upload" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+            <h2>Upload Image:</h2>
+            <div id="msg">{% if error %}
+                {{error}}
+                {% endif %}
+            </div>
+            <div class="wrapper">
+                <input id="file-picker" type="file" name="file" accept="image/*" multiple>
+                <input type="submit" value="Upload!" id="btn">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

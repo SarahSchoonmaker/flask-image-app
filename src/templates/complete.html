@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Upload</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header class="complete-header">
+    <h1>Image Validator</h1>
+  </header>
+    <div class="image-container">
+      <img src= " {{url_for('static', filename=image_name)}}" id="img-complete">
+    </div>
+    <div class="redirect">
+      <form action="{{ url_for('index') }}" method="get">
+        <button type="submit" id="#complete-btn"/>Home</bottom>
+      </form>
+    </div>
+</body>
+</html>

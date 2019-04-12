@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*            End of CSS Reset            */
+
+/*               Borderbox                */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* clearfix */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+/*               End of Setup             */
+
+/*                 Container for Top Navigation Bar              */
+
+body{
+  background-color: #2F4F4F;
+}
+
+.title-upload {
+  width: 100%;
+  text-align: center;
+  background-color:gray;
+  margin:0 auto;
+  padding-top:1.5em;
+  height:90px;
+
+}
+.image-upload{
+  margin:2em;
+}
+
+
+/* End Navigation Section */
+/* Form for uploading and submitting an image file */
+
+h1{
+  color: #004d4d;
+  font-family: "Times New Roman", Times, serif;
+  font-size:40px;
+  font-weight: 300;
+ 
+}
+
+h2{
+  font-size:25px;
+  font-family: Didot, serif;
+  margin-bottom:20px;
+ 
+}
+
+/* Upload Button & Message Styling */
+
+.msg {
+  cursor: pointer;
+  width:20%;
+  
+}
+
+#btn{
+    border: none;
+    padding: .5rem .5rem;
+    margin: 0;
+    text-decoration: none;
+    background: #022b5c;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+      transform 150ms ease;
+}
+
+#btn:hover{
+  background-color: #053504;
+  cursor: pointer;
+}
+
+#upload {
+  font-family: "Times New Roman", Times, serif;
+  font-size:12px;
+  padding-top:1em;
+  margin-bottom:1em;
+  margin-left:40%;
+  
+}
+
+#file-picker{
+  cursor:pointer;
+  width: 180px;
+}
+
+/* Styling the uploaded image and return home button */
+
+.image-container{
+  margin-top:10px;
+}
+
+.complete-header{
+  width: 100%;
+  background: gray;
+  text-align: center;
+  background-color:gray;
+  margin:0 auto;
+  padding-top:1.5em;
+  height:90px;
+}
+
+.image-container{
+  margin: 0 auto;
+  padding-top:1em;
+  width:15%;
+}
+
+#img-complete{
+  width:220px;
+  height:200px;
+  margin-top:2em;
+}
+
+button{
+  border: none;
+  padding: .5rem .5rem;
+  margin-left:47%;
+  margin-top:2%;
+  width: 100px;
+  text-decoration: none;
+  background: #022b5c;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+    transform 150ms ease;
+}
+
+button:hover{
+  background-color: #053504;
+  cursor: pointer;
+}
