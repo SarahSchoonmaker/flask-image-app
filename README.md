@@ -6,4 +6,6 @@ cd flask-image-app
 
 If you already have Flask and Python installed, CD into the src directory and start the server: python app.py or use the Live Server extension in Visual Studio Code. Navigate to localhost:8080. 
 
+Live Demo: https://my-python-flask-app.herokuapp.com/
+
  
