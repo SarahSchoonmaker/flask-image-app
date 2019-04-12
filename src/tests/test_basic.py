@@ -14,6 +14,7 @@ class TestFlaskApp(unittest.TestCase):
     def test_root(self):
         response = self.app.get('/')
         self.assertIn('Validator', response.data)
+
 # Testing for the image upload
     def test_image_upload(self):
         image = self.upload_img()
@@ -24,7 +25,7 @@ class TestFlaskApp(unittest.TestCase):
         )
         self.assertEqual(response.status_code, 200)
 
-# Testing for unacceptable file extensions in the upload process. 
+Testing for unacceptable file extensions in the upload process. 
     def test_image_bad_ext(self):
         image = self.upload_img()
         response = self.app.post(
